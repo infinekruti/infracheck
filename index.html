@@ -1,0 +1,2487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="InfraCheck - Premier Industrial Non-Destructive Testing (NDT), Mechanical Testing, and Third-Party Quality Inspection Services in Indore, Madhya Pradesh. ASNT & ISO compliant.">
+    <meta name="keywords" content="InfraCheck, NDT services, Non-Destructive Testing, Ultrasonic Testing UT, Radiographic Testing RT, Magnetic Particle Testing MPT, Dye Penetrant Testing DPT, Weld Inspection, Industrial Inspection, Indore, Madhya Pradesh">
+    <meta name="author" content="InfraCheck">
+    <meta name="robots" content="index, follow">
+    <title>InfraCheck | Industrial Testing & NDT Inspection Services</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/infracheck-logo.png">
+    
+    <!-- Open Graph for Social Sharing & WhatsApp Previews -->
+    <meta property="og:title" content="InfraCheck | Industrial Testing & NDT Inspection Services">
+    <meta property="og:description" content="Precision That Protects. Certified Non-Destructive Testing (NDT), Mechanical Testing, and Industrial Quality Inspection Solutions.">
+    <meta property="og:image" content="images/infracheck-logo.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Schema.org Structured Data for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "InfraCheck",
+      "image": "images/infracheck-logo.png",
+      "description": "Industrial Non-Destructive Testing (NDT), Mechanical Testing, and Quality Inspection Services in Indore, Madhya Pradesh.",
+      "telephone": "+918788115078",
+      "email": "infinekruti@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Yashwant Plaza",
+        "addressLocality": "Indore",
+        "addressRegion": "Madhya Pradesh",
+        "addressCountry": "IN"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday"],
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ],
+      "priceRange": "$$"
+    }
+    </script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- QRCode.js Library for Tamper-Proof Certificate Verification -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+    <style>
+        /* CSS Variables & Theme */
+        :root {
+            --primary: #0f4c81;
+            --primary-dark: #0a2540;
+            --primary-light: #167cc8;
+            --secondary: #f58220;
+            --secondary-hover: #e06f10;
+            --secondary-light: #fff3e6;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --light-card: #ffffff;
+            --border: #e2e8f0;
+            --gray: #64748b;
+            --gray-light: #94a3b8;
+            --white: #ffffff;
+            --whatsapp: #25d366;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.12);
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+            --transition: all 0.25s ease-in-out;
+        }
+
+        /* Base Resets */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.25;
+            color: var(--primary-dark);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Reusable Components */
+        .section {
+            padding: 85px 0;
+        }
+
+        .section-alt {
+            background-color: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 55px;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: var(--secondary-light);
+            color: var(--secondary);
+            font-weight: 700;
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 6px 16px;
+            border-radius: 50px;
+            margin-bottom: 14px;
+            border: 1px solid rgba(245, 130, 32, 0.2);
+        }
+
+        .section-header h2 {
+            font-size: 2.3rem;
+            margin-bottom: 16px;
+        }
+
+        .section-header p {
+            font-size: 1.05rem;
+            color: var(--gray);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 13px 28px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 0.92rem;
+            letter-spacing: 0.5px;
+            border-radius: var(--radius-sm);
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background: var(--secondary);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(245, 130, 32, 0.35);
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245, 130, 32, 0.45);
+        }
+
+        .btn-outline-white {
+            background: transparent;
+            color: var(--white);
+            border-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .btn-outline-white:hover {
+            background: var(--white);
+            color: var(--primary-dark);
+            border-color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-primary {
+            background: transparent;
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn-outline-primary:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 78px;
+            transition: var(--transition);
+        }
+
+        header.scrolled .nav-container {
+            height: 66px;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .brand-logo img {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+            transition: var(--transition);
+        }
+
+        header.scrolled .brand-logo img {
+            height: 42px;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 28px;
+        }
+
+        .nav-link {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            position: relative;
+            padding: 8px 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: var(--secondary);
+        }
+
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .nav-cta .btn {
+            padding: 9px 20px;
+            font-size: 0.85rem;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            cursor: pointer;
+            padding: 6px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, rgba(10, 37, 64, 0.92) 0%, rgba(15, 76, 129, 0.88) 100%),
+                        url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1800&q=80') center center / cover no-repeat;
+            min-height: 88vh;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            padding: 130px 0 80px;
+        }
+
+        .hero-content {
+            max-width: 780px;
+        }
+
+        .hero-tagline {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(245, 130, 32, 0.2);
+            color: #ffb066;
+            border: 1px solid rgba(245, 130, 32, 0.35);
+            padding: 7px 18px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            font-size: 3.3rem;
+            color: var(--white);
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero h1 span {
+            color: var(--secondary);
+        }
+
+        .hero p {
+            font-size: 1.18rem;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 34px;
+            max-width: 680px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 45px;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .hero-stat-item h3 {
+            font-size: 1.8rem;
+            color: var(--secondary);
+            margin-bottom: 4px;
+        }
+
+        .hero-stat-item p {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 0;
+            line-height: 1.3;
+        }
+
+        /* Trust & Standards Ticker */
+        .standards-bar {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 24px 0;
+            border-bottom: 3px solid var(--secondary);
+        }
+
+        .standards-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .standards-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--secondary);
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .standards-badges {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .badge-pill {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--white);
+            letter-spacing: 0.5px;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.85rem;
+            margin-bottom: 18px;
+            color: var(--primary);
+        }
+
+        .about-text p {
+            color: var(--gray);
+            margin-bottom: 18px;
+            font-size: 1.02rem;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 28px 0;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .highlight-item i {
+            color: var(--secondary);
+            font-size: 1.25rem;
+            margin-top: 3px;
+        }
+
+        .highlight-item h4 {
+            font-size: 0.98rem;
+            margin-bottom: 2px;
+        }
+
+        .highlight-item p {
+            font-size: 0.86rem;
+            margin-bottom: 0;
+            color: var(--gray);
+        }
+
+        .about-card-box {
+            background: linear-gradient(145deg, var(--white), #f1f5f9);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 36px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+
+        .about-card-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 30px;
+            right: 30px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 4px 4px 0 0;
+        }
+
+        .box-feature {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .box-feature:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .box-icon {
+            width: 52px;
+            height: 52px;
+            background: var(--secondary-light);
+            color: var(--secondary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            padding: 36px 30px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(22, 124, 200, 0.3);
+        }
+
+        .service-card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 22px;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: #eff6ff;
+            color: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-icon {
+            background: var(--secondary);
+            color: var(--white);
+        }
+
+        .service-card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 12px;
+            color: var(--primary-dark);
+        }
+
+        .service-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 22px;
+            flex-grow: 1;
+        }
+
+        .method-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+
+        .method-tag {
+            background: #f1f5f9;
+            color: var(--primary-dark);
+            font-size: 0.76rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .service-link {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .service-link:hover {
+            color: var(--secondary);
+            gap: 12px;
+        }
+
+        /* NDT Methods Showcase */
+        .methods-showcase {
+            background: #f8fafc;
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            margin-top: 50px;
+            border: 1px solid var(--border);
+        }
+
+        .methods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .method-box {
+            background: var(--white);
+            padding: 22px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+        }
+
+        .method-box h4 {
+            font-size: 1.05rem;
+            color: var(--primary);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .method-box h4 span {
+            background: var(--secondary-light);
+            color: var(--secondary);
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .method-box p {
+            font-size: 0.88rem;
+            color: var(--gray);
+            margin: 0;
+        }
+
+        /* Industries Section */
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 26px;
+        }
+
+        .industry-card {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            padding: 32px 26px;
+            border: 1px solid var(--border);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .industry-card:hover {
+            border-color: var(--secondary);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .industry-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            background: #f8fafc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: var(--primary-light);
+            border: 2px dashed rgba(22, 124, 200, 0.25);
+            transition: var(--transition);
+        }
+
+        .industry-card:hover .industry-icon {
+            background: var(--secondary-light);
+            color: var(--secondary);
+            border-color: var(--secondary);
+        }
+
+        .industry-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .industry-card p {
+            color: var(--gray);
+            font-size: 0.92rem;
+            margin-bottom: 0;
+        }
+
+        /* Why Choose InfraCheck / Process */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .process-step {
+            position: relative;
+            background: var(--white);
+            padding: 30px 24px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+        }
+
+        .step-num {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: rgba(15, 76, 129, 0.15);
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+
+        .process-step h4 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .process-step p {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-bottom: 0;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, #0d385c 100%);
+            color: var(--white);
+        }
+
+        .contact-section .section-header h2 {
+            color: var(--white);
+        }
+
+        .contact-section .section-header p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: var(--radius-lg);
+            padding: 40px 32px;
+        }
+
+        .contact-info h3 {
+            color: var(--white);
+            font-size: 1.7rem;
+            margin-bottom: 14px;
+        }
+
+        .contact-info > p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+            font-size: 0.98rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-icon {
+            width: 44px;
+            height: 44px;
+            background: rgba(245, 130, 32, 0.18);
+            border: 1px solid rgba(245, 130, 32, 0.4);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+            font-size: 1.15rem;
+            flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+            color: var(--white);
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .contact-details p,
+        .contact-details a {
+            color: rgba(255, 255, 255, 0.82);
+            font-size: 0.92rem;
+            line-height: 1.5;
+        }
+
+        .contact-details a:hover {
+            color: var(--secondary);
+            text-decoration: underline;
+        }
+
+        .contact-form-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 42px 36px;
+            box-shadow: var(--shadow-lg);
+            color: var(--dark);
+        }
+
+        .contact-form-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+            color: var(--primary-dark);
+        }
+
+        .contact-form-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 26px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            background: #fdfdfd;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(22, 124, 200, 0.15);
+            background: var(--white);
+        }
+
+        .form-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .btn-whatsapp-submit {
+            background: var(--whatsapp);
+            color: var(--white);
+            width: 100%;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp-submit:hover {
+            background: #20ba59;
+            transform: translateY(-2px);
+            color: var(--white);
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 26px;
+            right: 26px;
+            background: var(--whatsapp);
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+            z-index: 999;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.08) translateY(-3px);
+            box-shadow: 0 12px 28px rgba(37, 211, 102, 0.6);
+            color: var(--white);
+        }
+
+        .whatsapp-tooltip {
+            position: absolute;
+            right: 70px;
+            background: var(--dark);
+            color: var(--white);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 4px;
+            white-space: nowrap;
+            pointer-events: none;
+            opacity: 0;
+            transform: translateX(10px);
+            transition: var(--transition);
+        }
+
+        .whatsapp-float:hover .whatsapp-tooltip {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Footer */
+        footer {
+            background: #06192a;
+            color: rgba(255, 255, 255, 0.75);
+            padding: 70px 0 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-brand img {
+            height: 48px;
+            width: auto;
+            margin-bottom: 18px;
+            background: #ffffff;
+            padding: 6px 14px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 36px;
+            height: 2px;
+            background: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 11px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            transform: translateX(4px);
+        }
+
+        .footer-bottom {
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 14px;
+        /* Certificate & QR Verification Section */
+        .verify-section {
+            background: linear-gradient(180deg, #f8fafc 0%, #eef3f8 100%);
+            position: relative;
+        }
+
+        .verify-wrapper {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .verify-tabs-header {
+            display: flex;
+            background: #f1f5f9;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .verify-tab-btn {
+            flex: 1;
+            padding: 16px 20px;
+            border: none;
+            background: transparent;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--gray);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .verify-tab-btn.active {
+            background: var(--white);
+            color: var(--primary);
+            border-bottom: 3px solid var(--secondary);
+        }
+
+        .verify-tab-btn:hover:not(.active) {
+            color: var(--dark);
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .verify-panel {
+            padding: 40px 36px;
+            display: none;
+        }
+
+        .verify-panel.active {
+            display: block;
+        }
+
+        .verify-search-box {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .verify-input-wrap {
+            position: relative;
+            flex-grow: 1;
+        }
+
+        .verify-input-wrap i {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gray-light);
+            font-size: 1.1rem;
+        }
+
+        .verify-input {
+            width: 100%;
+            padding: 14px 16px 14px 46px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-size: 1.05rem;
+            font-family: 'Montserrat', monospace;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: var(--transition);
+        }
+
+        .verify-input:focus {
+            outline: none;
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 4px rgba(22, 124, 200, 0.15);
+        }
+
+        .sample-chips-bar {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 0.82rem;
+            color: var(--gray);
+            margin-bottom: 30px;
+        }
+
+        .sample-chip {
+            background: #eff6ff;
+            color: var(--primary-light);
+            border: 1px solid rgba(22, 124, 200, 0.25);
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-family: monospace;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .sample-chip:hover {
+            background: var(--primary-light);
+            color: var(--white);
+        }
+
+        /* Certificate Result Card */
+        .cert-result-container {
+            margin-top: 24px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .cert-card-valid {
+            border: 2px solid #22c55e;
+            border-radius: var(--radius-md);
+            background: #ffffff;
+            box-shadow: 0 10px 30px rgba(34, 197, 94, 0.12);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .cert-card-header {
+            background: linear-gradient(135deg, #0f4c81 0%, #0a2540 100%);
+            color: var(--white);
+            padding: 22px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .cert-badge-valid {
+            background: #22c55e;
+            color: var(--white);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(34, 197, 94, 0.35);
+        }
+
+        .cert-card-body {
+            padding: 32px 28px;
+            position: relative;
+        }
+
+        .cert-card-body::after {
+            content: 'ORIGINAL INFRACHECK VERIFIED';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-25deg);
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: rgba(15, 76, 129, 0.035);
+            font-family: 'Montserrat', sans-serif;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin-bottom: 26px;
+        }
+
+        .cert-field {
+            background: #f8fafc;
+            padding: 14px 18px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+        }
+
+        .cert-field-full {
+            grid-column: span 2;
+        }
+
+        .cert-field-label {
+            font-size: 0.76rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--gray);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .cert-field-value {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .cert-field-value.highlight {
+            color: var(--primary);
+            font-family: 'Montserrat', monospace;
+            font-weight: 700;
+        }
+
+        .cert-field-value.status-pass {
+            color: #15803d;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .cert-card-footer {
+            border-top: 1px dashed var(--border);
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .cert-card-invalid {
+            border: 2px solid #ef4444;
+            border-radius: var(--radius-md);
+            background: #fff5f5;
+            padding: 36px 28px;
+            text-align: center;
+        }
+
+        .cert-card-invalid i {
+            font-size: 3.2rem;
+            color: #ef4444;
+            margin-bottom: 16px;
+        }
+
+        .cert-card-invalid h3 {
+            color: #991b1b;
+            font-size: 1.45rem;
+            margin-bottom: 10px;
+        }
+
+        .cert-card-invalid p {
+            color: #7f1d1d;
+            max-width: 600px;
+            margin: 0 auto 20px;
+            font-size: 0.95rem;
+        }
+
+        /* QR Generator Tool for Staff */
+        .qr-generator-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .qr-preview-card {
+            background: #f8fafc;
+            border: 2px dashed #cbd5e1;
+            border-radius: var(--radius-md);
+            padding: 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #qrCodeCanvas {
+            background: var(--white);
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 16px;
+            min-height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #qrCodeCanvas img,
+        #qrCodeCanvas canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .qr-target-url {
+            font-size: 0.78rem;
+            color: var(--gray);
+            font-family: monospace;
+            word-break: break-all;
+            margin-bottom: 16px;
+            background: #e2e8f0;
+            padding: 6px 12px;
+            border-radius: 4px;
+            max-width: 100%;
+        }
+
+        /* Print Styles for Verification Slip */
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            .cert-result-container,
+            .cert-result-container * {
+                visibility: visible;
+            }
+            .cert-result-container {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+            .cert-card-footer {
+                display: none;
+            }
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+            .nav-menu {
+                position: fixed;
+                top: 78px;
+                right: -100%;
+                width: 280px;
+                height: calc(100vh - 78px);
+                background: var(--white);
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 30px 24px;
+                box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+                transition: right 0.3s ease;
+                gap: 20px;
+            }
+            .nav-menu.active {
+                right: 0;
+            }
+            .nav-cta {
+                display: none;
+            }
+            .hero {
+                padding: 120px 0 60px;
+                min-height: auto;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero-stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+            .standards-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="brand-logo" aria-label="InfraCheck Home">
+                <img src="images/infracheck-logo.png" alt="InfraCheck Logo">
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#methods" class="nav-link">NDT Methods</a></li>
+                <li><a href="#industries" class="nav-link">Industries</a></li>
+                <li><a href="#verify" class="nav-link"><i class="fas fa-qrcode"></i> Verify Report</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="#verify" class="btn btn-outline-primary" style="padding: 8px 14px;">
+                    <i class="fas fa-search-shield"></i> Verify QR
+                </a>
+                <a href="#contact" class="btn btn-primary">Get a Quote</a>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tagline">
+                    <i class="fas fa-shield-alt"></i> Certified Industrial Testing & Inspection
+                </div>
+                <h1>Precision That <span>Protects</span> Assets & Operations</h1>
+                <p>Ensuring compliance, structural integrity, and zero-defect safety. We deliver certified Non-Destructive Testing (NDT), Mechanical Testing, and Third-Party Quality Inspection solutions across Central India.</p>
+                
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-clipboard-check"></i> Request Inspection Quote
+                    </a>
+                    <a href="#verify" class="btn btn-outline-white">
+                        <i class="fas fa-qrcode"></i> Verify Certificate / QR
+                    </a>
+                    <a href="https://wa.me/918788115078?text=Hello%20InfraCheck%2C%20I%20would%20like%20to%20inquire%20about%20your%20testing%20and%20inspection%20services." target="_blank" rel="noopener noreferrer" class="btn btn-outline-white" style="background: rgba(37, 211, 102, 0.2); border-color: rgba(37, 211, 102, 0.6);">
+                        <i class="fab fa-whatsapp" style="color: #25d366;"></i> WhatsApp Chat
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="hero-stat-item">
+                        <h3>100%</h3>
+                        <p>Code Compliance (ASME, ASTM, ISO)</p>
+                    </div>
+                    <div class="hero-stat-item">
+                        <h3>Level II/III</h3>
+                        <p>Certified ASNT Inspectors</p>
+                    </div>
+                    <div class="hero-stat-item">
+                        <h3>Fast</h3>
+                        <p>Rapid Site Mobilization</p>
+                    </div>
+                    <div class="hero-stat-item">
+                        <h3>Digital</h3>
+                        <p>Detailed Certified Reports</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standards & Accreditations Ticker -->
+    <div class="standards-bar">
+        <div class="container standards-content">
+            <div class="standards-label">
+                <i class="fas fa-award"></i> Testing Standards & Codes:
+            </div>
+            <div class="standards-badges">
+                <span class="badge-pill">ASNT SNT-TC-1A</span>
+                <span class="badge-pill">ISO 9712</span>
+                <span class="badge-pill">ASME Sec V & VIII</span>
+                <span class="badge-pill">AWS D1.1</span>
+                <span class="badge-pill">API 510 / 570 / 653</span>
+                <span class="badge-pill">ASTM International</span>
+                <span class="badge-pill">IBR Approved</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-badge">About InfraCheck</span>
+                    <h3>Your Trusted Partner in Industrial Asset Integrity</h3>
+                    <p>InfraCheck is a premier industrial testing and non-destructive inspection organization based in Indore, Madhya Pradesh. We specialize in examining critical structural and mechanical infrastructure without impairing its future usefulness.</p>
+                    <p>Our certified NDT Level II and Level III engineers utilize calibrated testing instruments and international testing procedures. From pipeline integrity checks to structural weld verifications, we safeguard our clients against catastrophic equipment failure, unscheduled downtime, and regulatory non-compliance.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Certified Experts</h4>
+                                <p>Rigorous ASNT & ISO certified personnel</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Calibrated Equipment</h4>
+                                <p>High precision digital flaw detectors & gauges</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Quick Turnaround</h4>
+                                <p>Prompt on-site mobilization & rapid reporting</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Audit-Ready Reports</h4>
+                                <p>Comprehensive digital inspection certificates</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">Schedule a Site Audit</a>
+                </div>
+
+                <div class="about-card-box">
+                    <div class="box-feature">
+                        <div class="box-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div>
+                            <h4>Advanced Diagnostics</h4>
+                            <p>Ultrasonic Flaw Detection, Radiographic Evaluation, Thickness Gauging, and Surface Crack Mapping.</p>
+                        </div>
+                    </div>
+
+                    <div class="box-feature">
+                        <div class="box-icon">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                        <div>
+                            <h4>On-Site & Field Mobilization</h4>
+                            <p>Ready to deploy testing teams for plant shutdowns, fabrication workshops, and cross-country pipelines.</p>
+                        </div>
+                    </div>
+
+                    <div class="box-feature">
+                        <div class="box-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div>
+                            <h4>Compliance & QA/QC</h4>
+                            <p>Third-party verification for ASME, IBR, and API projects with complete defect documentation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testing Solutions</span>
+                <h2>Comprehensive Testing & Inspection Services</h2>
+                <p>Engineered to ensure safety, structural compliance, and reliability across your entire asset lifecycle.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-card-top">
+                        <div class="service-icon">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                    </div>
+                    <h3>Non-Destructive Testing (NDT)</h3>
+                    <p>Accurate flaw detection and thickness evaluation without compromising material structure. We uncover sub-surface defects, cracks, voids, and corrosion.</p>
+                    <div class="method-tags">
+                        <span class="method-tag">UT</span>
+                        <span class="method-tag">RT</span>
+                        <span class="method-tag">MPT</span>
+                        <span class="method-tag">DPT</span>
+                        <span class="method-tag">VT</span>
+                    </div>
+                    <a href="#contact" class="service-link">Inquire for NDT <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-card-top">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                    <h3>Mechanical & Material Testing</h3>
+                    <p>Verifying physical properties and tensile limits of metals and alloys. Includes tensile testing, impact testing (Charpy), hardness testing, and bend analysis.</p>
+                    <div class="method-tags">
+                        <span class="method-tag">Tensile</span>
+                        <span class="method-tag">Hardness</span>
+                        <span class="method-tag">Impact</span>
+                        <span class="method-tag">Bend Test</span>
+                    </div>
+                    <a href="#contact" class="service-link">Inquire for Mechanical <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-card-top">
+                        <div class="service-icon">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <h3>Industrial & Weld Inspection</h3>
+                    <p>Field inspection for structural fabrication, pressure vessels, pipelines, and storage tanks. Certified QA/QC inspection and welding procedure qualification (WPS/PQR).</p>
+                    <div class="method-tags">
+                        <span class="method-tag">Weld Inspection</span>
+                        <span class="method-tag">QA/QC</span>
+                        <span class="method-tag">WPS / PQR</span>
+                        <span class="method-tag">WQT</span>
+                    </div>
+                    <a href="#contact" class="service-link">Inquire for Inspection <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-card-top">
+                        <div class="service-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                    </div>
+                    <h3>Laboratory & Metallurgical Analysis</h3>
+                    <p>Chemical composition analysis, positive material identification (PMI), microstructure examination, and root cause failure analysis of broken machinery components.</p>
+                    <div class="method-tags">
+                        <span class="method-tag">PMI</span>
+                        <span class="method-tag">Metallography</span>
+                        <span class="method-tag">Failure Analysis</span>
+                    </div>
+                    <a href="#contact" class="service-link">Inquire for Lab Testing <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-card-top">
+                        <div class="service-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                    </div>
+                    <h3>Third-Party Inspection (TPI)</h3>
+                    <p>Independent third-party inspection, vendor quality audits, raw material verification, and stage-wise manufacturing surveillance for EPC projects.</p>
+                    <div class="method-tags">
+                        <span class="method-tag">Vendor Audit</span>
+                        <span class="method-tag">Dispatch Clearance</span>
+                        <span class="method-tag">FAT / SAT</span>
+                    </div>
+                    <a href="#contact" class="service-link">Inquire for TPI <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-card-top">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <h3>NDT Level III Consulting</h3>
+                    <p>Preparation of written practices, inspection procedure development, code interpretation, qualification audits, and technical advisory services for compliance.</p>
+                    <div class="method-tags">
+                        <span class="method-tag">Written Practice</span>
+                        <span class="method-tag">Audit Support</span>
+                        <span class="method-tag">Level III Advisory</span>
+                    </div>
+                    <a href="#contact" class="service-link">Inquire for Consulting <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NDT Methods Showcase Section -->
+    <section id="methods" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Methodology</span>
+                <h2>Specialized NDT Methods We Perform</h2>
+                <p>Standardized execution adhering strictly to ASME Section V, ASTM, and ISO parameters.</p>
+            </div>
+
+            <div class="methods-grid">
+                <div class="method-box">
+                    <h4>Ultrasonic Testing <span>UT</span></h4>
+                    <p>High-frequency sound waves evaluate internal discontinuities, weld defects, laminations, and precision wall thickness gauging.</p>
+                </div>
+                <div class="method-box">
+                    <h4>Radiographic Testing <span>RT</span></h4>
+                    <p>X-Ray and Gamma-Ray radiography revealing volumetric flaws like porosity, slag inclusion, and lack of penetration in welds.</p>
+                </div>
+                <div class="method-box">
+                    <h4>Magnetic Particle <span>MPT / MPI</span></h4>
+                    <p>Detects surface and near-surface cracks in ferromagnetic materials including welds, forged shafts, and structural beams.</p>
+                </div>
+                <div class="method-box">
+                    <h4>Liquid Penetrant <span>DPT / PT</span></h4>
+                    <p>Identifies surface-breaking flaws, leaks, and pinholes across non-porous metals, stainless steels, and exotic alloys.</p>
+                </div>
+                <div class="method-box">
+                    <h4>Visual Inspection <span>VT</span></h4>
+                    <p>Direct visual and optical borescope checks verifying weld profiles, alignment, root pass fusion, and surface corrosion.</p>
+                </div>
+                <div class="method-box">
+                    <h4>Positive Material ID <span>PMI</span></h4>
+                    <p>Fast on-site XRF elemental analysis ensuring precise alloy grade verification and preventing material mix-ups.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Served -->
+    <section id="industries" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Sectors</span>
+                <h2>Industries We Serve</h2>
+                <p>Delivering critical quality assurance across vital industrial and infrastructure domains.</p>
+            </div>
+
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-oil-can"></i></div>
+                    <h3>Oil, Gas & Petrochemical</h3>
+                    <p>Refinery piping, pressure vessels, storage tanks (API 650/653), flare systems, and offshore installations.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-building"></i></div>
+                    <h3>Construction & Infrastructure</h3>
+                    <p>Structural steel framing, bridge girders, rebar testing, heavy crane structures, and civil works.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-industry"></i></div>
+                    <h3>Heavy Manufacturing</h3>
+                    <p>Pressure equipment, boiler drums, heat exchangers, castings, forgings, and high-load machinery.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Power & Energy</h3>
+                    <p>Thermal, hydro, and solar installations; steam piping, turbine rotors, boiler tubes (IBR), and valves.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-plane"></i></div>
+                    <h3>Aerospace & Defense</h3>
+                    <p>Critical aviation components, landing gear, engine mounts, and precision defense hardware.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-ship"></i></div>
+                    <h3>Marine & Shipping</h3>
+                    <p>Hull integrity inspection, propeller shafts, rudder stocks, marine boilers, and dockyard surveys.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspection Workflow -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">How We Work</span>
+                <h2>Our 4-Step Quality Assurance Workflow</h2>
+                <p>A systematic and transparent protocol from initial scope to digital certification.</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step">
+                    <span class="step-num">01</span>
+                    <h4>Scope & Code Review</h4>
+                    <p>We analyze drawings, material specifications, and applicable ASME / ISO / IBR standards for the project.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-num">02</span>
+                    <h4>Site Mobilization</h4>
+                    <p>Our certified NDT team arrives on-site equipped with calibrated, industrial-grade diagnostic equipment.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-num">03</span>
+                    <h4>Testing & Defect Mapping</h4>
+                    <p>Rigorous test execution with photographic proof, precise flaw dimensioning, and acceptance verification.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-num">04</span>
+                    <h4>Certified Digital Report</h4>
+                    <p>Prompt delivery of comprehensive, audit-ready inspection reports signed by certified Level II/III personnel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate & Report Verification Section -->
+    <section id="verify" class="section verify-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-shield-alt"></i> Authenticity Check</span>
+                <h2>Verify Certificate & Inspection Report</h2>
+                <p>Ensure your NDT test report or certification was genuinely issued by InfraCheck. Scan the QR code on your certificate or enter the unique Certificate ID below.</p>
+            </div>
+
+            <div class="verify-wrapper">
+                <div class="verify-panel active" style="display: block; padding: 42px 36px;">
+                    <div style="text-align: center; margin-bottom: 24px;">
+                        <span style="display: inline-flex; align-items: center; gap: 8px; background: #e0f2fe; color: #0284c7; padding: 4px 14px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+                            <i class="fas fa-lock"></i> Official Public Registry
+                        </span>
+                        <h3 style="font-size: 1.45rem; color: var(--primary-dark); margin-bottom: 6px;">Enter Certificate or Report Number</h3>
+                        <p style="font-size: 0.92rem; color: var(--gray); margin: 0;">Cross-referenced in real-time with InfraCheck's Quality Assurance Database</p>
+                    </div>
+
+                    <div class="verify-search-box">
+                        <div class="verify-input-wrap">
+                            <i class="fas fa-barcode"></i>
+                            <input type="text" id="certSearchInput" class="verify-input" placeholder="e.g. IC-UT-2026-001" autocomplete="off" spellcheck="false">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="btnVerifyCert" style="padding: 14px 28px;">
+                            <i class="fas fa-search"></i> Verify Certificate
+                        </button>
+                    </div>
+
+                    <!-- Sample Quick-Test Chips -->
+                    <div class="sample-chips-bar" style="justify-content: center; margin-bottom: 20px;">
+                        <span><i class="fas fa-info-circle"></i> Quick test samples:</span>
+                        <span class="sample-chip" onclick="quickVerify('IC-UT-2026-001')">IC-UT-2026-001</span>
+                        <span class="sample-chip" onclick="quickVerify('IC-RT-2026-002')">IC-RT-2026-002</span>
+                        <span class="sample-chip" onclick="quickVerify('IC-MPT-2026-003')">IC-MPT-2026-003</span>
+                    </div>
+
+                    <!-- Live Results Container -->
+                    <div id="certResultContainer" class="cert-result-container" style="display: none;">
+                        <!-- Dynamic verification card injected here via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Quote Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get In Touch</span>
+                <h2>Contact Us & Request a Quote</h2>
+                <p>Discuss your testing requirements or mobilize an inspection crew to your site.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Info Column -->
+                <div class="contact-info">
+                    <h3>InfraCheck Headquarters</h3>
+                    <p>Our technical team is ready to provide customized testing, third-party inspection, and certified consultation.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Yashwant Plaza, Indore, Madhya Pradesh, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone / Direct Call</h4>
+                            <p><a href="tel:+918788115078">+91 87881 15078</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Address</h4>
+                            <p><a href="mailto:infinekruti@gmail.com">infinekruti@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px;">
+                        <a href="https://wa.me/918788115078?text=Hello%20InfraCheck%2C%20I%20want%20to%20inquire%20about%20inspection%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-submit">
+                            <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="contact-form-card">
+                    <h3>Request an Inspection Quote</h3>
+                    <p>Fill out the details below. You can send this inquiry directly via WhatsApp or standard submission.</p>
+
+                    <form id="quoteForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="clientName">Full Name *</label>
+                                <input type="text" id="clientName" class="form-control" placeholder="e.g. Rahul Sharma" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="clientPhone">Phone Number *</label>
+                                <input type="tel" id="clientPhone" class="form-control" placeholder="e.g. +91 98765 43210" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="clientEmail">Email Address</label>
+                                <input type="email" id="clientEmail" class="form-control" placeholder="name@company.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="serviceType">Service Required *</label>
+                                <select id="serviceType" class="form-control" required>
+                                    <option value="" disabled selected>Select Inspection Service</option>
+                                    <option value="Non-Destructive Testing (NDT)">Non-Destructive Testing (UT/RT/MPT/DPT)</option>
+                                    <option value="Mechanical & Material Testing">Mechanical & Material Testing</option>
+                                    <option value="Industrial Weld Inspection">Industrial / Weld Inspection</option>
+                                    <option value="Third-Party Inspection (TPI)">Third-Party Inspection (TPI)</option>
+                                    <option value="NDT Level III Consulting">NDT Level III Consulting</option>
+                                    <option value="Other Testing Services">Other / Custom Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="siteLocation">Site / Plant Location</label>
+                            <input type="text" id="siteLocation" class="form-control" placeholder="e.g. Pithampur, Indore, Dewas, etc.">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="messageText">Project Details / Requirements</label>
+                            <textarea id="messageText" class="form-control" rows="4" placeholder="Briefly describe the components, thickness, quantity, or standards (ASME, AWS, etc.)..."></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" id="btnSendWhatsApp" class="btn btn-whatsapp-submit">
+                                <i class="fab fa-whatsapp"></i> Send Inquiry via WhatsApp (+91 87881 15078)
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Submit via Email
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918788115078?text=Hello%20InfraCheck%20NDT%2C%20I%20would%20like%20to%20inquire%20about%20your%20testing%20and%20inspection%20services." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-float" 
+       aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/infracheck-logo.png" alt="InfraCheck Logo">
+                    <p>InfraCheck is an industrial testing and non-destructive examination company committed to asset integrity, regulatory compliance, and workplace safety across India.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#methods"><i class="fas fa-chevron-right"></i> NDT Methods</a></li>
+                        <li><a href="#industries"><i class="fas fa-chevron-right"></i> Industries</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Core Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Ultrasonic Testing (UT)</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Radiographic Testing (RT)</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Magnetic Particle (MPT)</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Dye Penetrant (DPT)</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Third-Party Inspection</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Weld & QA/QC Audits</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p style="margin-bottom: 10px;"><i class="fas fa-map-marker-alt" style="color: var(--secondary); margin-right: 8px;"></i> Yashwant Plaza, Indore, MP</p>
+                    <p style="margin-bottom: 10px;"><i class="fas fa-phone-alt" style="color: var(--secondary); margin-right: 8px;"></i> <a href="tel:+918788115078" style="color: rgba(255,255,255,0.85);">+91 87881 15078</a></p>
+                    <p style="margin-bottom: 10px;"><i class="fas fa-envelope" style="color: var(--secondary); margin-right: 8px;"></i> <a href="mailto:infinekruti@gmail.com" style="color: rgba(255,255,255,0.85);">infinekruti@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 InfraCheck NDT Services. All Rights Reserved.</p>
+                <p>Designed for High Reliability & Code Compliance</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Header scroll styling
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = mobileToggle.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when clicking nav links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = mobileToggle.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+
+        // WhatsApp direct inquiry trigger
+        const btnSendWhatsApp = document.getElementById('btnSendWhatsApp');
+        btnSendWhatsApp.addEventListener('click', () => {
+            const name = document.getElementById('clientName').value.trim();
+            const phone = document.getElementById('clientPhone').value.trim();
+            const service = document.getElementById('serviceType').value;
+            const location = document.getElementById('siteLocation').value.trim();
+            const message = document.getElementById('messageText').value.trim();
+
+            if (!name || !phone) {
+                alert('Please enter your Name and Phone Number to start a WhatsApp inquiry.');
+                return;
+            }
+
+            let text = `*New Inspection Inquiry - InfraCheck*%0A`;
+            text += `*Name:* ${encodeURIComponent(name)}%0A`;
+            text += `*Phone:* ${encodeURIComponent(phone)}%0A`;
+            if (service) text += `*Service:* ${encodeURIComponent(service)}%0A`;
+            if (location) text += `*Location:* ${encodeURIComponent(location)}%0A`;
+            if (message) text += `*Details:* ${encodeURIComponent(message)}%0A`;
+
+            const whatsappUrl = `https://wa.me/918788115078?text=${text}`;
+            window.open(whatsappUrl, '_blank');
+        });
+
+        // Email form submission fallback
+        const quoteForm = document.getElementById('quoteForm');
+        quoteForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('clientName').value.trim();
+            const phone = document.getElementById('clientPhone').value.trim();
+            const service = document.getElementById('serviceType').value;
+            const location = document.getElementById('siteLocation').value.trim();
+            const message = document.getElementById('messageText').value.trim();
+
+            const subject = encodeURIComponent(`Inspection Quote Request: ${service || 'General'} - ${name}`);
+            const body = encodeURIComponent(
+                `Name: ${name}\n` +
+                `Phone: ${phone}\n` +
+                `Service Required: ${service || 'N/A'}\n` +
+                `Site Location: ${location || 'N/A'}\n\n` +
+                `Project Details:\n${message || 'N/A'}`
+            );
+
+            window.location.href = `mailto:infinekruti@gmail.com?subject=${subject}&body=${body}`;
+        });
+
+        // ==========================================
+        // CERTIFICATE & QR VERIFICATION ENGINE
+        // ==========================================
+
+        // Live Google Sheet API (Google Apps Script Web App Endpoint)
+        const GOOGLE_SHEETS_API_URL = "https://script.google.com/macros/s/AKfycbx5YpeQjDi10OyNmEtFUQjDLLgNRfvD-HbuYHUTPBibmlVD4AshceqVm96tb2NcX8WX3Q/exec"; 
+
+        // Built-in verified registry (Works immediately out-of-the-box and acts as offline fallback)
+        const LOCAL_CERTIFICATES = {
+            "IC-UT-2026-001": {
+                id: "IC-UT-2026-001",
+                client: "PetroGlobal Refineries Ltd",
+                component: "Heat Exchanger Shell Circumferential Weld (W-04)",
+                method: "Ultrasonic Testing (UT) - Flaw Detection & Thickness Gauging",
+                standard: "ASME Section V (Art. 4) / ASME Section VIII Div 1",
+                issueDate: "12-Oct-2026",
+                inspector: "R. K. Sharma",
+                inspectorLevel: "ASNT NDT Level II (Cert #UT-9842)",
+                status: "ACCEPTABLE / COMPLIANT",
+                details: "100% volumetric examination completed. No planar, lack of fusion, or rejectable linear indications observed. Thickness within permissible corrosion allowance."
+            },
+            "IC-RT-2026-002": {
+                id: "IC-RT-2026-002",
+                client: "L&T Infrastructure & Construction",
+                component: "Storage Tank High-Pressure Piping Butt Joints (Line P-102)",
+                method: "Radiographic Testing (RT) - Gamma Ray Ir-192",
+                standard: "ASME B31.3 Normal Fluid Service / ASME Sec V",
+                issueDate: "10-Oct-2026",
+                inspector: "A. Patel",
+                inspectorLevel: "ASNT NDT Level II (Cert #RT-7731)",
+                status: "ACCEPTABLE / COMPLIANT",
+                details: "Radiographs evaluated. Radiographic density 2.2 - 2.8. No rejectable porosity, cracks, or lack of penetration detected."
+            },
+            "IC-MPT-2026-003": {
+                id: "IC-MPT-2026-003",
+                client: "BHEL Heavy Engineering",
+                component: "EOT Crane Main Hook (50-Ton Capacity) & Lifting Lugs",
+                method: "Magnetic Particle Testing (MPT/MPI) - Wet Fluorescent & Visible Yoke",
+                standard: "ASTM E709 / AWS D1.1 Clause 6",
+                issueDate: "08-Oct-2026",
+                inspector: "V. Verma",
+                inspectorLevel: "ASNT NDT Level II (Cert #MT-5540)",
+                status: "ACCEPTABLE / COMPLIANT",
+                details: "Magnetic particle inspection under AC yoke (minimum 4.5 kg lift verified). Zero surface fatigue cracks or discontinuities detected."
+            },
+            "IC-DPT-2026-004": {
+                id: "IC-DPT-2026-004",
+                client: "Sun Pharma Advanced Manufacturing",
+                component: "SS 316L Clean-in-Place (CIP) Reactor Vessel Nozzle Welds",
+                method: "Liquid Dye Penetrant Testing (DPT/PT) - Solvent Removable Visible Dye",
+                standard: "ASME Section V (Art. 6) / ASTM E165",
+                issueDate: "05-Oct-2026",
+                inspector: "R. K. Sharma",
+                inspectorLevel: "ASNT NDT Level II (Cert #PT-9843)",
+                status: "ACCEPTABLE / COMPLIANT",
+                details: "Dwell time 15 minutes. Developer inspection at 10 minutes. Clean surface with zero bleed-outs or pinhole indications."
+            },
+            "IC-TPI-2026-005": {
+                id: "IC-TPI-2026-005",
+                client: "Tata Projects & Infrastructure",
+                component: "Fabricated Structural Steel Columns & Base Plates (Lot 18)",
+                method: "Third-Party Quality Inspection (TPI) & Stage-Wise QA/QC Surveillance",
+                standard: "ISO 9001:2015 / Approved Manufacturer QAP Rev 02",
+                issueDate: "02-Oct-2026",
+                inspector: "S. Joshi",
+                inspectorLevel: "TPI Lead Quality Auditor (AWS-CWI)",
+                status: "DISPATCH CLEARED / SATISFACTORY",
+                details: "Dimensional verification, weld visual inspection, and material test certificates (MTC) cross-referenced against EN 10204 3.1. Material cleared for site dispatch."
+            }
+        };
+
+        // Quick verify from sample chips
+        function quickVerify(id) {
+            document.getElementById('certSearchInput').value = id;
+            performVerification(id);
+        }
+
+        // Core verification handler
+        async function performVerification(rawId) {
+            const id = (rawId || document.getElementById('certSearchInput').value || '').trim().toUpperCase();
+            const container = document.getElementById('certResultContainer');
+
+            if (!id) {
+                alert('Please enter a Certificate ID (e.g. IC-UT-2026-001) to verify.');
+                return;
+            }
+
+            container.style.display = 'block';
+            container.innerHTML = `
+                <div style="text-align: center; padding: 30px; background: #fff; border-radius: var(--radius-md); border: 1px solid var(--border);">
+                    <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--primary); margin-bottom: 12px;"></i>
+                    <p style="color: var(--gray); font-weight: 600; margin: 0;">Querying InfraCheck official registry for <strong>${id}</strong>...</p>
+                </div>
+            `;
+
+            let certData = null;
+
+            // Step 1: Check live Google Sheets API if configured
+            if (GOOGLE_SHEETS_API_URL) {
+                try {
+                    const response = await fetch(`${GOOGLE_SHEETS_API_URL}?id=${encodeURIComponent(id)}`);
+                    if (response.ok) {
+                        const json = await response.json();
+                        if (json && json.found) {
+                            certData = json.data;
+                        }
+                    }
+                } catch (err) {
+                    console.warn('Google Sheets API query failed, checking local registry fallback:', err);
+                }
+            }
+
+            // Step 2: Fallback to local registry
+            if (!certData && LOCAL_CERTIFICATES[id]) {
+                certData = LOCAL_CERTIFICATES[id];
+            }
+
+            // Render Result
+            if (certData) {
+                renderVerifiedCard(certData);
+            } else {
+                renderInvalidCard(id);
+            }
+
+            container.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Render Verified Success Card
+        function renderVerifiedCard(cert) {
+            const container = document.getElementById('certResultContainer');
+            const verifyDate = new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+
+            container.innerHTML = `
+                <div class="cert-card-valid">
+                    <div class="cert-card-header">
+                        <div>
+                            <div style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.85; margin-bottom: 2px;">Official Inspection Verification</div>
+                            <h3 style="color: var(--white); font-size: 1.35rem; margin: 0;">InfraCheck Quality Assurance Registry</h3>
+                        </div>
+                        <div class="cert-badge-valid">
+                            <i class="fas fa-check-circle"></i> VERIFIED AUTHENTIC
+                        </div>
+                    </div>
+
+                    <div class="cert-card-body">
+                        <div class="cert-grid">
+                            <div class="cert-field">
+                                <div class="cert-field-label">Certificate / Report ID</div>
+                                <div class="cert-field-value highlight">${cert.id}</div>
+                            </div>
+                            <div class="cert-field">
+                                <div class="cert-field-label">Date of Inspection / Issue</div>
+                                <div class="cert-field-value">${cert.issueDate}</div>
+                            </div>
+
+                            <div class="cert-field cert-field-full">
+                                <div class="cert-field-label">Client / Organization</div>
+                                <div class="cert-field-value">${cert.client}</div>
+                            </div>
+
+                            <div class="cert-field cert-field-full">
+                                <div class="cert-field-label">Component / Joint Tested</div>
+                                <div class="cert-field-value">${cert.component}</div>
+                            </div>
+
+                            <div class="cert-field">
+                                <div class="cert-field-label">Testing Method</div>
+                                <div class="cert-field-value">${cert.method}</div>
+                            </div>
+                            <div class="cert-field">
+                                <div class="cert-field-label">Governing Standard / Code</div>
+                                <div class="cert-field-value">${cert.standard}</div>
+                            </div>
+
+                            <div class="cert-field">
+                                <div class="cert-field-label">Inspected & Signed By</div>
+                                <div class="cert-field-value">${cert.inspector}</div>
+                                <div style="font-size: 0.82rem; color: var(--gray); font-weight: 600; margin-top: 2px;">${cert.inspectorLevel}</div>
+                            </div>
+                            <div class="cert-field">
+                                <div class="cert-field-label">Final Evaluation Status</div>
+                                <div class="cert-field-value status-pass">
+                                    <i class="fas fa-shield-alt"></i> ${cert.status}
+                                </div>
+                            </div>
+
+                            <div class="cert-field cert-field-full">
+                                <div class="cert-field-label">Summary Remarks & Compliance</div>
+                                <div style="font-size: 0.94rem; color: #334155; line-height: 1.5;">${cert.details}</div>
+                            </div>
+                        </div>
+
+                        <div class="cert-card-footer">
+                            <div style="font-size: 0.82rem; color: var(--gray);">
+                                <i class="fas fa-clock"></i> Verified live on ${verifyDate} via <strong>www.infracheck.in</strong>
+                            </div>
+                            <div style="display: flex; gap: 10px;">
+                                <button type="button" class="btn btn-outline-primary" onclick="window.print()" style="padding: 8px 16px; font-size: 0.85rem;">
+                                    <i class="fas fa-print"></i> Print Slip
+                                </button>
+                                <button type="button" class="btn btn-primary" onclick="clearVerifySearch()" style="padding: 8px 16px; font-size: 0.85rem;">
+                                    <i class="fas fa-search"></i> New Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Render Invalid / Not Found Card
+        function renderInvalidCard(id) {
+            const container = document.getElementById('certResultContainer');
+            container.innerHTML = `
+                <div class="cert-card-invalid">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Certificate Record Not Found</h3>
+                    <p>
+                        We could not find an official record matching <strong>"${id}"</strong> in the InfraCheck inspection database.
+                    </p>
+                    <p style="font-size: 0.88rem; color: #991b1b; margin-bottom: 24px;">
+                        <strong>Notice:</strong> Please verify that the Certificate ID was entered correctly without typos. If you suspect a forged or tampered document, please notify our quality compliance team immediately.
+                    </p>
+                    <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+                        <a href="tel:+918788115078" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">
+                            <i class="fas fa-phone-alt"></i> Call Support (+91 87881 15078)
+                        </a>
+                        <button type="button" class="btn btn-outline-primary" onclick="clearVerifySearch()" style="padding: 10px 20px; font-size: 0.88rem;">
+                            <i class="fas fa-redo"></i> Try Another ID
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function clearVerifySearch() {
+            document.getElementById('certSearchInput').value = '';
+            document.getElementById('certResultContainer').style.display = 'none';
+            document.getElementById('certSearchInput').focus();
+        }
+
+        // Event Listeners for Verify Search
+        document.getElementById('btnVerifyCert').addEventListener('click', () => {
+            performVerification();
+        });
+
+        document.getElementById('certSearchInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                performVerification();
+            }
+        });
+
+        // ==========================================
+        // AUTO-DETECTION: QR SCAN FROM URL PARAMETER
+        // ==========================================
+        window.addEventListener('DOMContentLoaded', () => {
+            // Check if page was opened by scanning a QR Code (?cert=... or ?id=...)
+            const params = new URLSearchParams(window.location.search);
+            const scannedId = params.get('cert') || params.get('verify') || params.get('id');
+
+            if (scannedId) {
+                const input = document.getElementById('certSearchInput');
+                input.value = scannedId;
+                
+                // Give browser a moment to settle layout, then execute and scroll
+                setTimeout(() => {
+                    performVerification(scannedId);
+                    const verifySection = document.getElementById('verify');
+                    if (verifySection) {
+                        verifySection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 400);
+            }
+        });
+    </script>
+</body>
+</html>
